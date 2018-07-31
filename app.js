@@ -16,6 +16,6 @@ function previewFile() {
 
 $('#deleteImage').click(function (e) { 
   e.preventDefault();
-  input.replaceWith(input.val('').clone(true));
+  $('#fileInput').val('');
 });
 

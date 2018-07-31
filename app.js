@@ -30,7 +30,7 @@ function clearFileInput(id)
     oldInput.parentNode.replaceChild(newInput, oldInput); 
 }
 
-$('#btnDelete').click(function (e) { 
+$('#deleteImage').click(function (e) { 
   e.preventDefault();
   clearFileInput("fileinput");
 });

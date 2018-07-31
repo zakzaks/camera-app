@@ -14,8 +14,8 @@ function previewFile() {
   }
 }
 
-$('#deleteImage').click(function (e) { 
+$('#clear').click(function (e) { 
   e.preventDefault();
-  $('#fileInput').val('');
+  $('#fileinput').val("");
 });
 

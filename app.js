@@ -32,6 +32,6 @@ function clearFileInput(id)
 
 $('#btnDelete').click(function (e) { 
   e.preventDefault();
-  clearFileInput("deleteImage");
+  clearFileInput("fileinput");
 });
 

@@ -13,3 +13,25 @@ function previewFile() {
     preview.src = "";
   }
 }
+
+function clearFileInput(id) 
+{ 
+    var oldInput = document.getElementById(id); 
+
+    var newInput = document.createElement("input"); 
+
+    newInput.type = "file"; 
+    newInput.id = oldInput.id; 
+    newInput.name = oldInput.name; 
+    newInput.className = oldInput.className; 
+    newInput.style.cssText = oldInput.style.cssText; 
+    // TODO: copy any other relevant attributes 
+
+    oldInput.parentNode.replaceChild(newInput, oldInput); 
+}
+
+$('#btnDelete').click(function (e) { 
+  e.preventDefault();
+  clearFileInput("fileInput");
+});
+

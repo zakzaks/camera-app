@@ -10,7 +10,8 @@
 <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-<input type="file" accept="image/*" capture="camera" />
+<input type="file" accept="image/*" capture="camera" onchange="previewFile()" />
+<img src="" height="200" alt="Image preview...">
 <!-- Reference to your JavaScript file -->
 <script src="app.js"></script> 
 </body>
